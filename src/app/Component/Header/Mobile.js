@@ -16,7 +16,7 @@ const Mobile = () => {
     };
 
     return (
-        <div className="sm:w-32px h-full w-full flex flex-row">
+        <div className=" h-full w-full flex flex-row">
             {/* <div className='flex m-6 w-full h-full justify-center'> */}
                 {/* Clickable hamburger menu icon */}
      {
@@ -27,7 +27,7 @@ const Mobile = () => {
         </div>
        )
      }
-    
+    {/* <SiFlipkart/> */}
         </div>
     );
 }
