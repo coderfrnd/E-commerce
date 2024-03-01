@@ -9,6 +9,7 @@ import { CiShop } from "react-icons/ci";
 import { HiOutlineDotsVertical } from "react-icons/hi";
 import Card from "../Category/Card";
 import Carousel_Desk from "../Carousel/Carousel_Desk";
+import Offers from "../Offers/Offers";
 
 function Desktop() {
   return (
@@ -59,6 +60,9 @@ function Desktop() {
       </div>
       <div>
         <Carousel_Desk />
+      </div>
+      <div>
+        <Offers />
       </div>
     </div>
   );
