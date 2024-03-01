@@ -6,7 +6,7 @@ import Mobile from "./Component/Header/Mobile";
 // import { useMediaQuery } from "@react-hook/media-query";
 import { useMediaQuery } from "@react-hook/media-query";
 
-import { useMediaQuery } from "@react-hook/media-query";
+// import { useMediaQuery } from "@react-hook/media-query";
 // import { useMediaQuery } from "@react-hook/media-query";
 
 

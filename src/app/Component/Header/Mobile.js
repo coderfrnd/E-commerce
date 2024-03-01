@@ -9,6 +9,8 @@ import { FaRegUserCircle } from "react-icons/fa";
 import { IoCartOutline } from "react-icons/io5";
 import { CiShop } from "react-icons/ci";
 import { HiOutlineDotsVertical } from "react-icons/hi"
+import Mobile_Carousel from '../Carousel/Mobile_Carousel';
+import MobileOffer from '../Offers/MobileOffer';
 
 const Mobile = () => {
     // useState to control sidebar visibility
@@ -51,7 +53,7 @@ const Mobile = () => {
  </div> */}
 </div>
         </div>
-        <div className="search flex flex-row items-center w-full ">
+        <div className="search flex flex-row items-center w-full  ">
           <div className="search-icon cursor-pointer">
             {" "}
             {/* <CiSearch className="h-6 w-6" />{" "} */}
@@ -63,6 +65,29 @@ const Mobile = () => {
             // <CiSearch className="h-6 w-6" />{" "}
           />
         </div>
+        <div className='mt-0 mb-0'>
+            <Mobile_Carousel
+            imageUrl="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/ec6cf773ae886bd7.jpg?q=20"
+            />
+        </div>
+        <div className='m-2 flex flex-row item-center space-x-3'>
+            <MobileOffer
+            imageUrl="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/ec6cf773ae886bd7.jpg?q=20"
+            title="FOOD"
+            />
+             <MobileOffer
+            imageUrl="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/ec6cf773ae886bd7.jpg?q=20"
+            title="FOOD"
+            />
+             <MobileOffer
+            imageUrl="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/ec6cf773ae886bd7.jpg?q=20"
+            title="FOOD"
+            />
+             <MobileOffer
+            imageUrl="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/ec6cf773ae886bd7.jpg?q=20"
+            title="FOOD"
+            />
+        </div>
 
         </div>
         
@@ -73,17 +98,7 @@ const Mobile = () => {
         </div>
        )
      }
-     {/* <div className='h-[6%] flex mt-0 item-center space-x-4'>
-    
-          <SiFlipkart className="h-7 w-6 mt-5" />
-       
-            <FaRegUserCircle className="h-7 w-6 mt-5 " />{" "}
-        
-          <IoCartOutline className="h-7 w-6 mt-5 " />
-          
-        <CiShop className="h-7 w-6  mt-5" />
-        */}
-     {/* </div> */}
+     
      
     
      </div>

@@ -3,7 +3,7 @@ import React from "react";
 function Offers() {
   return (
     <div className="">
-      <div className="w-[98%] h-50 m-auto flex justify-around mt-5 flex ">
+      <div className="w-[98%] h-50 m-auto flex justify-around mt-5  ">
         <div className="w-[24%] ">
           <img
             src="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/ec6cf773ae886bd7.jpg?q=20"
