@@ -1,16 +1,16 @@
 "use client"
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Desktop from "./Component/Header/Desktop";
 import Mobile from "./Component/Header/Mobile";
+// import { useMediaQuery } from "@react-hook/media-query";
+import { useMediaQuery } from "@react-hook/media-query";
 
 export default function Home() {
-  
+  const isMobile = useMediaQuery("(max-width: 768px)");
+
   return (
     <div className="w-full h-screen">
-      {/* <div className={isMobile ? 'sm:hidden' : 'xl:h-16 border-black'}>
-        {isMobile ? <div className='h-full w-full'><Mobile /></div> : <Desktop />}
-      </div> */}
-      <Mobile/>
+      {isMobile ? <Mobile /> : <Desktop />}
     </div>
   );
 }
