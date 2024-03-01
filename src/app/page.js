@@ -2,6 +2,8 @@
 import React, { useState, useEffect } from "react";
 import Desktop from "./Component/Header/Desktop";
 import Mobile from "./Component/Header/Mobile";
+import Card from "./Component/Category/Card";
+Card
 
 export default function Home() {
   
@@ -10,7 +12,9 @@ export default function Home() {
       {/* <div className={isMobile ? 'sm:hidden' : 'xl:h-16 border-black'}>
         {isMobile ? <div className='h-full w-full'><Mobile /></div> : <Desktop />}
       </div> */}
-      <Mobile/>
+      <Desktop />
+      {/* <Mobile/> */}
+      <Card />
     </div>
   );
 }
