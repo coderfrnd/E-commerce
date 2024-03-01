@@ -8,9 +8,12 @@ import { IoCartOutline } from "react-icons/io5";
 import { CiShop } from "react-icons/ci";
 import { HiOutlineDotsVertical } from "react-icons/hi";
 import Card from "../Category/Card";
+
+
 import Carousel_Desk from "../Carousel/Carousel_Desk";
 import Offers from "../Offers/Offers";
 import Deals from "../Deals/Deals";
+
 
 function Desktop() {
   return (
@@ -56,6 +59,10 @@ function Desktop() {
           <HiOutlineDotsVertical />{" "}
         </div>
       </header>
+
+      {/* <Card/> */}
+        
+
       <div>
         <Card />
       </div>
@@ -69,6 +76,9 @@ function Desktop() {
         <Deals />
       </div>
     </div>
+    //  </div>
+    // </div>
+  
   );
 }
 
