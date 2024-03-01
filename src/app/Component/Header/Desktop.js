@@ -7,8 +7,7 @@ import { FaRegUserCircle } from "react-icons/fa";
 import { IoCartOutline } from "react-icons/io5";
 import { CiShop } from "react-icons/ci";
 import { HiOutlineDotsVertical } from "react-icons/hi";
-
-
+import Card from "../Category/Card";
 
 function Desktop() {
   return (
@@ -45,12 +44,18 @@ function Desktop() {
         </div>
 
         <div className="seller flex flex-row items-center cursor-pointer">
-        <CiShop className="h-7 w-7 mr-2" />
-        <div>Seller</div>
+          <CiShop className="h-7 w-7 mr-2" />
+          <div>Seller</div>
         </div>
 
-        <div className="three-dots flex items-center cursor-pointer"> <HiOutlineDotsVertical /> </div>
+        <div className="three-dots flex items-center cursor-pointer">
+          {" "}
+          <HiOutlineDotsVertical />{" "}
+        </div>
       </header>
+      <div>
+        <Card />
+      </div>
     </div>
   );
 }

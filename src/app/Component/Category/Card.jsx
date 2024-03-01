@@ -22,11 +22,11 @@ function Card() {
             </div>
             <div className='h-full '>
                 <img src="https://rukminim2.flixcart.com/flap/80/80/image/ab7e2b022a4587dd.jpg?q=100" alt="" />
-                <div>Home and Fu</div>
+                <div>Home and Furniture</div>
             </div>
             <div className='h-full '>
-                <img src="https://rukminim2.flixcart.com/flap/80/80/image/69c6589653afdb9a.png?q=100" alt="" />
-                <div>Electronics</div>
+                <img src="https://rukminim2.flixcart.com/flap/80/80/image/71050627a56b4693.png?q=100" alt="" />
+                <div>Travel</div>
             </div>
         </div>
     </div>
