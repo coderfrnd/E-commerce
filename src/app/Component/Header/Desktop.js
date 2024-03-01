@@ -10,6 +10,7 @@ import { HiOutlineDotsVertical } from "react-icons/hi";
 import Card from "../Category/Card";
 import Carousel_Desk from "../Carousel/Carousel_Desk";
 import Offers from "../Offers/Offers";
+import Deals from "../Deals/Deals";
 
 function Desktop() {
   return (
@@ -63,6 +64,9 @@ function Desktop() {
       </div>
       <div>
         <Offers />
+      </div>
+      <div>
+        <Deals />
       </div>
     </div>
   );

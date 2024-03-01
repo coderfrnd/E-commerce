@@ -30,7 +30,6 @@ function Offers() {
           />
         </div>
       </div>
-      ncjk
     </div>
   );
 }
