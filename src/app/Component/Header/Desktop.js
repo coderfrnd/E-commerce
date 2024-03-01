@@ -10,6 +10,9 @@ import { HiOutlineDotsVertical } from "react-icons/hi";
 import Card from "../Category/Card";
 
 
+import Carousel_Desk from "../Carousel/Carousel_Desk";
+import Offers from "../Offers/Offers";
+
 
 function Desktop() {
   return (
@@ -46,14 +49,31 @@ function Desktop() {
         </div>
 
         <div className="seller flex flex-row items-center cursor-pointer">
-        <CiShop className="h-7 w-7 mr-2" />
-        <div>Seller</div>
+          <CiShop className="h-7 w-7 mr-2" />
+          <div>Seller</div>
         </div>
 
-        <div className="three-dots flex items-center cursor-pointer"> <HiOutlineDotsVertical /> </div>
+        <div className="three-dots flex items-center cursor-pointer">
+          {" "}
+          <HiOutlineDotsVertical />{" "}
+        </div>
       </header>
+
       {/* <Card/> */}
-         </div>
+        
+
+      <div>
+        <Card />
+      </div>
+      <div>
+        <Carousel_Desk />
+      </div>
+      <div>
+        <Offers />
+      </div>
+     </div>
+    // </div>
+  
   );
 }
 
