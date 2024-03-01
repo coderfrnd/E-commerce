@@ -2,49 +2,70 @@ import React from "react";
 
 function Deals() {
   return (
-    <div className="flex flex-col">
-      <div className="w-[98%] m-auto bg-white mt-5 flex">
-        <div className="bg-white	">
+    <div className="">
+      <div className="w-[98%] m-auto bg-white mt-5 flex flex-col">
+        <div className="bg-white flex flex-row justify-between">
           <div>Top Deals</div>
-          <div>Icons</div>
+          <div>Icon</div>
         </div>
 
-        <div className="flex" >
-          <div>
+        <div className="flex flex-row justify-between	" >
+          <div className="flex flex-col justify-center ml-1 mr-1 border-black-100	border-2 w-[50%]">
             <img
               src="https://images-cdn.ubuy.co.in/65487090c761180592382d4a-men-watches-military-black-steel.jpg"
               alt=""
-              className="h-[5%] w-[5%]"
+              className="h-[75%] w-[25%]"
             />
             <div>Armani Exchange</div>
             <div>35% off</div>
           </div>
-          <div>
+          <div className="flex flex-col justify-center ml-1 mr-1 border-black-100	border-2 w-[50%]">
             <img
               src="https://www.verywellhealth.com/thmb/CXkPB3b0u5u9oz7BylGvwGpVIAc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-730132839-5a1e0b74482c520037eed28c.jpg"
               alt=""
-              className="h-[10%] w-[10%]"
+              className="h-[75%] w-[25%]"
             />
             <div>Armani Exchange</div>
             <div>35% off</div>
           </div>
-          <div>
+          <div className="flex flex-col justify-center ml-1 mr-1 border-black-100	border-2 w-[50%]">
             <img
-              src="https://images-cdn.ubuy.co.in/65487090c761180592382d4a-men-watches-military-black-steel.jpg"
+              src="https://5.imimg.com/data5/BR/GE/MY-43691381/formal-shirts-for-men-dark-green-shirt-mens-supplier.jpg"
               alt=""
-              className="h-[5%] w-[5%]"
+              className="h-[75%] w-[55%]"
             />
             <div>Armani Exchange</div>
             <div>35% off</div>
           </div>
-          <div>
+          <div className="flex flex-col justify-center ml-1 mr-1 border-black-100	border-2 w-[50%]">
             <img
               src="https://images-cdn.ubuy.co.in/65487090c761180592382d4a-men-watches-military-black-steel.jpg"
               alt=""
-              className="h-[5%] w-[5%]"
+              className="h-[75%] w-[25%]"
             />
             <div>Armani Exchange</div>
             <div>35% off</div>
+          </div>
+          <div className="flex flex-col justify-center ml-1 mr-1 border-black-100	border-2 w-[50%]">
+            <img
+              src="https://images-cdn.ubuy.co.in/65487090c761180592382d4a-men-watches-military-black-steel.jpg"
+              alt=""
+              className="h-[75%] w-[25%]"
+            />
+            <div>Armani Exchange</div>
+            <div>35% off</div>
+          </div>
+          <div className="flex flex-col justify-center ml-1 mr-1 border-black-100	border-2 w-[50%]">
+            <div className="m-auto">
+
+            <img
+              src="https://images-cdn.ubuy.co.in/65487090c761180592382d4a-men-watches-military-black-steel.jpg"
+              alt=""
+              className="h-[75%] w-[25%] m-auto"
+              />
+            <div>Armani Exchange</div>
+            <div>35% off</div>
+              </div>
           </div>
         </div>
       </div>
