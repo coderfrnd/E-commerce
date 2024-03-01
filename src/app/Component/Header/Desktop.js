@@ -8,6 +8,7 @@ import { IoCartOutline } from "react-icons/io5";
 import { CiShop } from "react-icons/ci";
 import { HiOutlineDotsVertical } from "react-icons/hi";
 import Card from "../Category/Card";
+import Carousel_Desk from "../Carousel/Carousel_Desk";
 
 function Desktop() {
   return (
@@ -55,6 +56,9 @@ function Desktop() {
       </header>
       <div>
         <Card />
+      </div>
+      <div>
+        <Carousel_Desk />
       </div>
     </div>
   );
