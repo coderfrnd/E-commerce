@@ -9,11 +9,9 @@ import { CiShop } from "react-icons/ci";
 import { HiOutlineDotsVertical } from "react-icons/hi";
 import Card from "../Category/Card";
 
-
 import Carousel_Desk from "../Carousel/Carousel_Desk";
 import Offers from "../Offers/Offers";
 import Deals from "../Deals/Deals";
-
 
 function Desktop() {
   return (
@@ -59,26 +57,42 @@ function Desktop() {
           <HiOutlineDotsVertical />{" "}
         </div>
       </header>
-
       {/* <Card/> */}
-        
-
       <div>
         <Card />
       </div>
       <div>
         <Carousel_Desk />
       </div>
-      <div>
-        <Offers />
+
+      {/* Offers */}
+
+      <div className="flex ">
+        <div className="">
+          <Offers imageUrl="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/ec6cf773ae886bd7.jpg?q=20"
+            title="FOOD" />
+        </div>
+        <div className="">
+          <Offers imageUrl="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/22e305bf45e2e1a2.jpeg?q=20"
+            title="FOOD" />
+        </div>
+        <div className="">
+          <Offers imageUrl="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/c3146ff3077e7744.jpg?q=20"
+            title="FOOD" />
+        </div>
+        <div className="">
+          <Offers imageUrl="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/ec6cf773ae886bd7.jpg?q=20"
+            title="FOOD" />
+        </div>
       </div>
+
+
+      {/* Deals  */}
+
       <div>
         <Deals />
       </div>
     </div>
-    //  </div>
-    // </div>
-  
   );
 }
 
