@@ -81,7 +81,7 @@ function Desktop() {
             title="FOOD" />
         </div>
         <div className="">
-          <Offers imageUrl="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/ec6cf773ae886bd7.jpg?q=20"
+          <Offers imageUrl="https://i.pinimg.com/736x/eb/7e/c6/eb7ec6677c9e7f769787d781d26027fe.jpg"
             title="FOOD" />
         </div>
       </div>

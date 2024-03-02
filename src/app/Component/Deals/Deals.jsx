@@ -1,5 +1,13 @@
 import React from "react";
 
+const Brands = ({ imgURL, brand, discount }) => {
+  <div>
+    <img src={imgURL} alt="nmnvm" />
+    <div>{brand}</div>
+    <div>{discount}</div>
+  </div>
+};
+
 function Deals() {
   return (
     <div className="">
@@ -9,7 +17,9 @@ function Deals() {
           <div>Icon</div>
         </div>
 
-        <div className="flex flex-row justify-between	" >
+        <Brands imgURL='https://dev1-cdn.helioswatchstore.com/catalog/product/cache/dd1c3400e344f54d12df823ec560a116/a/x/ax7153set_1.jpg' brand='Armani Watch' discount='35% off' />
+
+        {/* <div className="flex flex-row justify-between	">
           <div className="flex flex-col justify-center ml-1 mr-1 border-black-100	border-2 w-[50%]">
             <img
               src="https://images-cdn.ubuy.co.in/65487090c761180592382d4a-men-watches-military-black-steel.jpg"
@@ -57,17 +67,17 @@ function Deals() {
           </div>
           <div className="flex flex-col justify-center ml-1 mr-1 border-black-100	border-2 w-[50%]">
             <div className="m-auto">
-
-            <img
-              src="https://images-cdn.ubuy.co.in/65487090c761180592382d4a-men-watches-military-black-steel.jpg"
-              alt=""
-              className="h-[75%] w-[25%] m-auto"
+              <img
+                src="https://images-cdn.ubuy.co.in/65487090c761180592382d4a-men-watches-military-black-steel.jpg"
+                alt=""
+                className="h-[75%] w-[25%] m-auto"
               />
-            <div>Armani Exchange</div>
-            <div>35% off</div>
-              </div>
+              <div>Armani Exchange</div>
+              <div>35% off</div>
+            </div>
           </div>
-        </div>
+        </div> */}
+
       </div>
     </div>
   );
