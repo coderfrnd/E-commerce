@@ -11,6 +11,8 @@ import { CiShop } from "react-icons/ci";
 import { HiOutlineDotsVertical } from "react-icons/hi"
 import Mobile_Carousel from '../Carousel/Mobile_Carousel';
 import MobileOffer from '../Offers/MobileOffer';
+import Mobile_Deals from '../Deals/Mobile_Deals';
+import Mob_Footer from '../MobileFOOTER/Mob_Footer';
 
 const Mobile = () => {
     // useState to control sidebar visibility
@@ -87,6 +89,39 @@ const Mobile = () => {
             imageUrl="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/ec6cf773ae886bd7.jpg?q=20"
             title="FOOD"
             />
+        </div>
+        <div className='h-10  mt-1 mb-0 flex flex-row w-full'>
+      <h2 className='text-gray-800 font-semibold text-lg items-center ml-4 mt-1'>TOP DEALS</h2>
+   </div>
+        {/* <div className='mb-2 ml-1 mt-0 flex flex-row w-full h-full'> */}
+        <div className='h-full w-full flex flex-col '>
+            {/* Your other components */}
+            <div className=' flex flex-wrap  m-1  w-full h-full'>
+                <Mobile_Deals 
+                imageUrl="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/ec6cf773ae886bd7.jpg?q=20"
+                title="FOOD"
+                offer='56% off'
+                />
+                <Mobile_Deals
+                imageUrl="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/9926b000d9e06f79.jpg?q=20"
+                title="ELECTRONICS"
+                offer='56% off'
+                />
+                <Mobile_Deals
+                imageUrl="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/81035a28051d094e.jpg?q=20"
+                title="MOBILE"
+                offer='56% off'
+                 />
+                <Mobile_Deals
+                imageUrl="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/81035a28051d094e.jpg?q=20"
+                title="MOBILE"
+                offer='56% off'
+                />
+            </div>
+           
+        </div>
+        <div className='w-full h-full'>
+          <Mob_Footer/>
         </div>
 
         </div>
