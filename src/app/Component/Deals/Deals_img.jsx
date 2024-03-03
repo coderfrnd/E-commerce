@@ -2,8 +2,8 @@ import React from "react";
 
 function Deals_img({ imgURL, brand, discount }) {
   return (
-    <div className="w-[98%] h[70%] cursor-pointer">
-      <div className="flex flex-col items-center justify-center m-2 border-black-100 h-[70%] border-2">
+    <div className="w-[98%] h[70%]">
+      <div className="flex flex-col items-center justify-center m-2 border-black-100 h-[70%] cursor-pointer border-2">
        
         
         <img
