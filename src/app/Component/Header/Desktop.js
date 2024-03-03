@@ -13,6 +13,7 @@ import Carousel_Desk from "../Carousel/Carousel_Desk";
 import Offers from "../Offers/Offers";
 import Deals from "../Deals/Deals";
 import Deals_img from "../Deals/Deals_img";
+import Footer_desk from "../Footer/Footer_desk";
 
 function Desktop() {
   return (
@@ -131,7 +132,11 @@ function Desktop() {
           />
           </div>
       </div>
-      
+
+      {/* Footer */}
+
+      <Footer_desk />
+
     </div>
   );
 }
