@@ -17,11 +17,10 @@ import Footer_desk from "../Footer/Footer_desk";
 
 function Desktop() {
   return (
-    <div>
-      <header className="flex flex-row justify-around	">
+    <div className="">
+      <header className="flex flex-row justify-around	m-5">
         <div className="flipkart cursor-pointer">
-          <SiFlipkart className="h-7 w-7" />
-          <span>Explore plus</span>
+          <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg" />
         </div>
 
         <div className="search flex flex-row items-center w-3/6">

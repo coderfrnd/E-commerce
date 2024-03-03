@@ -12,7 +12,7 @@ import { MdOutlineCopyright } from 'react-icons/md'
 function Footer_desk() {
     return (
         <div className=''>
-            <footer className=' bg-slate-900 text-slate-300'>
+            <footer className=' bg-slate-900 text-slate-400'>
                 <div className='flex flex-row  p-8 text-xs justify-around'>
 
                     <About />
