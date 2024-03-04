@@ -14,6 +14,7 @@ import MobileOffer from '../Offers/MobileOffer';
 import Mobile_Deals from '../Deals/Mobile_Deals';
 import Mob_Footer from '../MobileFOOTER/Mob_Footer';
 
+
 const Mobile = () => {
     // useState to control sidebar visibility
     const [isSidebarOpen, setIsSidebarOpen] = useState(true);
@@ -118,16 +119,17 @@ const Mobile = () => {
                 offer='56% off'
                 />
             </div>
-           
+            
         </div>
-        <div className='w-full h-full'>
-          <Mob_Footer/>
-        </div>
+        <div className='h-20 mt-4 border-2 border-black   w-full'>
+        <Mob_Footer/>
+       </div>
 
         </div>
         
+        
         : 
-       <div className ='h-full w-full flex'>
+       <div className ='h-full w-full flex '>
         <Sidebar/>
         <RxCross1 onClick ={toggleSidebar} className ='h-8 w-8 m-2  '/>
         </div>
