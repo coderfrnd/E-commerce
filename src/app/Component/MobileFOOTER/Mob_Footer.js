@@ -1,56 +1,60 @@
-"use client"
-import { useRouter } from 'next/navigation'
-import React from 'react'
-import { FaGithub } from "react-icons/fa";
-import { FaDiscord } from "react-icons/fa";
-import { IconContext } from 'react-icons';
+import React, { useEffect, useState } from 'react';
+import { useRouter } from 'next/navigation';
 import { IoHomeOutline } from "react-icons/io5";
 import { FaRegUser } from "react-icons/fa";
 import { IoBusinessOutline } from "react-icons/io5";
 import { CiShoppingCart } from "react-icons/ci";
-import { CiSquareMore } from "react-icons/ci"
-// import { useRouter } from 'next/router'
-const Mob_Footer = ({ children, href }) => {
-    const router = useRouter()
+import { CiSquareMore } from "react-icons/ci";
+
+const Mob_Footer = ({ color }) => {
+    const router = useRouter();
 
     const handleNavigation = (route) => {
         router.push(route);
     };
   
-    const Foot = ({ icon, size = '1.5em', color = 'black', ...rest }) => {
-        const IconComponent = icon;
-        return (
-            <IconContext.Provider value={{ size, color }}>
-                <IconComponent {...rest} />
-            </IconContext.Provider>
-        );
+    // useState
+    const [Header, setHeader] = useState(false);
+
+    const scrolltry = () => {
+        if (window.scrollY >= 20) {
+            setHeader(true);
+        } else {
+            setHeader(false);
+        }
     }
 
+    useEffect(() => {
+        window.addEventListener('scroll', scrolltry);
+        return () => {
+            window.removeEventListener('scroll', scrolltry);
+        }
+    }, []);
+
     return (
-        <div className='  text-black h-16 w-[100%] flex flex-row mt-2 space-x-4 black   mb-0 '>
-            {/* <Foot icon={FaDiscord} size="2em" color="white"/> */}
-            <div className='ml-2 w-14 flex justify-center flex-col items-center'>
-            <Foot icon={IoHomeOutline} size="1.5em" color="black"/>
-            <h3 className='font-bold'>Home</h3>
+        <div className={`fixed bottom-0 left-0 w-full flex justify-between items-center bg-${Header ? 'black' : 'white'} text-${Header ? 'white' : 'black'} border-t border-gray-300 px-4 py-2`}>
+            <div className='w-1/5 text-center flex  items-center flex-col'>
+                <IoHomeOutline size="1.5em" color={color} />
+                <h3 className='font-bold'>Home</h3>
             </div>
-            <div className='ml-2 w-14 flex justify-center flex-col items-center'>
-            <Foot icon={FaRegUser}size="1.5em" color="black"/>
-            <h3 className='font-bold'>USER</h3>
+            <div className='w-1/5 text-center flex  items-center flex-col'>
+                <FaRegUser size="1.5em" color={color} />
+                <h3 className='font-bold'>USER</h3>
             </div>
-            <div className=' w-18 flex justify-center flex-col items-center'>
-            <Foot icon={IoBusinessOutline} size="1.5em" color="black"/>
-            <h3 className='font-bold'>BUSINESS</h3>
+            <div className='w-1/3 text-center flex  items-center flex-col'>
+                <IoBusinessOutline size="1.5em" color={color} />
+                <h3 className='font-bold'>BUSINESS</h3>
             </div>
-            <div className='ml-2 w-14 flex justify-center flex-col items-center'>
-            <Foot icon={CiShoppingCart} size="1.5em" color="black"/>
-            <h3 className='font-bold'>CART</h3>
+            <div className='w-1/5 text-center flex  items-center flex-col'>
+                <CiShoppingCart size="1.5em" color={color} />
+                <h3 className='font-bold'>CART</h3>
             </div>
-            <div className='ml-2 w-14 flex justify-center flex-col items-center'>
-            <Foot icon={CiSquareMore} size="1.5em" color="black"/>
-            <h3 className='font-bold'>MORE</h3>
+            <div className='w-1/5 text-center flex  items-center flex-col'>
+                <CiSquareMore size="1.5em" color={color} />
+                <h3 className='font-bold'>MORE</h3>
             </div>
         </div>
-    )
+    );
 }
 
 export default Mob_Footer;

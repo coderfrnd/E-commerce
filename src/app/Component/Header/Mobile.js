@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { SiFlipkart } from "react-icons/si";
 import Sidebar from './Sidebar';
@@ -24,6 +24,7 @@ const Mobile = () => {
         setIsSidebarOpen(!isSidebarOpen);
         // console.log("Click")
     };
+   
 
     return (
         <div className='h-full w-full flex flex-col '>
@@ -118,11 +119,15 @@ const Mobile = () => {
                 title="MOBILE"
                 offer='56% off'
                 />
+                
             </div>
             
         </div>
-        <div className='h-20 mt-4 border-2 border-black   w-full'>
-        <Mob_Footer/>
+        <div className= 'h-20 mt-12 border-2 bg-black text-white border-black  w-full'
+      >
+        <Mob_Footer 
+      
+        />
        </div>
 
         </div>
