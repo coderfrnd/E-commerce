@@ -133,8 +133,10 @@ const Mobile = () => {
             </div>
              {/* <Mob_Footer  /> */}
         </div>
-      
-        <Mob_Footer  />
+      <div className='bg-black'>
+      <Mob_Footer  />
+      </div>
+       
      
 
         </div>
