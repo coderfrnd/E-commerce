@@ -32,7 +32,7 @@ const Mob_Footer = ({ color }) => {
     }, []);
 
     return (
-        <div className={`fixed bottom-0 left-0 w-full flex justify-between items-center bg-${Header ? 'black' : 'white'} text-${Header ? 'white' : 'black'} border-t border-gray-300 px-4 py-2`}>
+        <div className={`fixed bottom-0 left-0 w-screen flex justify-between items-center bg-${Header ? 'black' : 'white'} text-${Header ? 'white' : 'black'} border-t border-gray-300 px-4 py-2`}>
             <div className='w-1/5 text-center flex  items-center flex-col'>
                 <IoHomeOutline size="1.5em"  />
                 <h3 className='font-bold'>Home</h3>

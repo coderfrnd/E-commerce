@@ -27,13 +27,13 @@ const Mobile = () => {
    
 
     return (
-        <div className='h-full w-full flex flex-col '>
+        <div className='h-full w-screen flex flex-col '>
 
        
-        <div className="h-full w-full">
+        <div className="h-full w-screen">
            
      {
-       ( isSidebarOpen ? <div className ='h-full w-full flex flex-col'>
+       ( isSidebarOpen ? <div className ='h-full w-screen flex flex-col'>
 
         <div className='flex flex-row '>
         <div className='w-12 h-12 items-center mt-2 flex justify-center'>
@@ -42,7 +42,7 @@ const Mobile = () => {
         
   
         
-        <div className=' flex mt-3 ml-[50%]  justify-center item-center space-x-4'>
+        <div className=' flex mt-3 ml-[49%]  justify-center item-center space-x-4'>
     
     <SiFlipkart className="h-7 w-6 mt-1" />
  
@@ -96,9 +96,9 @@ const Mobile = () => {
       <h2 className='text-gray-800 font-semibold text-lg items-center ml-4 mt-1'>TOP DEALS</h2>
    </div>
         {/* <div className='mb-2 ml-1 mt-0 flex flex-row w-full h-full'> */}
-        <div className='h-screen w-full flex flex-col  '>
+        <div className='h-screen m-0 p-0 w-screen flex flex-col  '>
             {/* Your other components */}
-            <div className=' flex flex-wrap  m-1 h-screen w-full overflow-y-auto '>
+            <div className=' flex flex-wrap  m-0 h-screen w-screen overflow-y-auto '>
                 <Mobile_Deals 
                 imageUrl="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/ec6cf773ae886bd7.jpg?q=20"
                 title="FOOD"
