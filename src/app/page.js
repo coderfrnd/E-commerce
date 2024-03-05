@@ -19,13 +19,7 @@ export default function Home() {
       {isMobile ? 
       <>
       <Mobile /> 
-      <div className= ' text-black   w-full'
-      >
-        {/* <Mob_Footer */}
-        <Mob_Footer 
       
-        />
-       </div>
       </>
       : <Desktop />}
     </div>

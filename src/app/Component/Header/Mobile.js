@@ -131,13 +131,10 @@ const Mobile = () => {
                 />
                 
             </div>
-            
+             {/* <Mob_Footer  /> */}
         </div>
-        <div className= ' text-black   w-full'
-      >
-        <Mob_Footer 
-      
-        />
+        <div className= ' w-full  ' >
+        <Mob_Footer  />
        </div>
 
         </div>
