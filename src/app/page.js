@@ -5,6 +5,7 @@ import Mobile from "./Component/Header/Mobile";
 
 // import { useMediaQuery } from "@react-hook/media-query";
 import { useMediaQuery } from "@react-hook/media-query";
+import Mob_Footer from "./Component/MobileFOOTER/Mob_Footer";
 
 // import { useMediaQuery } from "@react-hook/media-query";
 // import { useMediaQuery } from "@react-hook/media-query";
@@ -15,7 +16,18 @@ export default function Home() {
 
   return (
     <div className="w-full h-screen">
-      {isMobile ? <Mobile /> : <Desktop />}
+      {isMobile ? 
+      <>
+      <Mobile /> 
+      <div className= ' text-black   w-full'
+      >
+        {/* <Mob_Footer */}
+        <Mob_Footer 
+      
+        />
+       </div>
+      </>
+      : <Desktop />}
     </div>
   );
 }

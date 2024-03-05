@@ -119,11 +119,21 @@ const Mobile = () => {
                 title="MOBILE"
                 offer='56% off'
                 />
+                <Mobile_Deals
+                imageUrl="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/81035a28051d094e.jpg?q=20"
+                title="MOBILE"
+                offer='56% off'
+                />
+                <Mobile_Deals
+                imageUrl="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/81035a28051d094e.jpg?q=20"
+                title="MOBILE"
+                offer='56% off'
+                />
                 
             </div>
             
         </div>
-        <div className= 'h-20 mt-12 border-2 bg-black text-white border-black  w-full'
+        <div className= ' text-black   w-full'
       >
         <Mob_Footer 
       
