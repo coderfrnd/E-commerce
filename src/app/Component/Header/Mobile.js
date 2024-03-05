@@ -133,9 +133,9 @@ const Mobile = () => {
             </div>
              {/* <Mob_Footer  /> */}
         </div>
-        <div className= ' w-full  ' >
+        {/* <div className= ' w-full ' > */}
         <Mob_Footer  />
-       </div>
+       {/* </div> */}
 
         </div>
         
