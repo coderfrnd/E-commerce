@@ -96,44 +96,51 @@ const Mobile = () => {
       <h2 className='text-gray-800 font-semibold text-lg items-center ml-4 mt-1'>TOP DEALS</h2>
    </div>
         {/* <div className='mb-2 ml-1 mt-0 flex flex-row w-full h-full'> */}
-        <div className='h-full w-full flex flex-col '>
+        <div className='h-screen w-full flex flex-col  '>
             {/* Your other components */}
-            <div className=' flex flex-wrap  m-1  w-full h-full'>
+            <div className=' flex flex-wrap  m-1 h-screen w-full overflow-y-auto '>
                 <Mobile_Deals 
                 imageUrl="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/ec6cf773ae886bd7.jpg?q=20"
                 title="FOOD"
                 offer='56% off'
+                // className='mb-2'
                 />
                 <Mobile_Deals
                 imageUrl="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/9926b000d9e06f79.jpg?q=20"
                 title="ELECTRONICS"
                 offer='56% off'
+                // className='mb-2'
                 />
                 <Mobile_Deals
                 imageUrl="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/81035a28051d094e.jpg?q=20"
                 title="MOBILE"
                 offer='56% off'
+                // className='mb-2'
                  />
                 <Mobile_Deals
                 imageUrl="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/81035a28051d094e.jpg?q=20"
                 title="MOBILE"
                 offer='56% off'
+                // className='mb-2'
                 />
                 <Mobile_Deals
                 imageUrl="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/81035a28051d094e.jpg?q=20"
                 title="MOBILE"
                 offer='56% off'
+                // className='mb-2'
                 />
                 <Mobile_Deals
                 imageUrl="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/81035a28051d094e.jpg?q=20"
                 title="MOBILE"
                 offer='56% off'
+                // className='mb-2'
                 />
                 
             </div>
              {/* <Mob_Footer  /> */}
         </div>
-      <div className='bg-black'>
+        <div className='h-1 m-10 bg-white'>A </div>
+      <div className='bg-black '>
       <Mob_Footer  />
       </div>
        
