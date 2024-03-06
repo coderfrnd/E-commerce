@@ -37,7 +37,11 @@ const Mobile_Carousel = () => {
   return (
     <div className="bg-white shadow-md rounded-md overflow-hidden relative"> {/* Added relative positioning */}
       <div className="carousel flex w-screen relative">
-        <img src={caro[trey].imageUrl} alt={`Image ${trey}`} className="w-full h-40 object-cover" />
+        <img src={caro[trey].imageUrl} alt={`Image ${trey}`} className="w-full h-40 object-cover"
+        
+        
+        />
+       
         {/* <MdNavigateNext className="absolute top-1/2 right-2 transform -translate-y-1/2 text-black text-[200%]" /> Added Tailwind classes for positioning */}
         <button
         type="button"
@@ -45,9 +49,10 @@ const Mobile_Carousel = () => {
         data-carousel-next
         onClick={stright}
       >
+       
         <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/20 ">
           <svg
-            className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+            className="w-4 h-4 text-white dark:text-gry-800 rtl:rotate-180"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
