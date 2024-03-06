@@ -15,6 +15,7 @@ import Mobile_Deals from "../Deals/Mobile_Deals";
 import Mob_Footer from "../MobileFOOTER/Mob_Footer";
 import ItemsMob from "../Items/ItemsMob";
 import { MdOutlineNavigateNext } from "react-icons/md";
+import Link from "next/link";
 
 const Mobile = () => {
   // useState to control sidebar visibility
@@ -41,7 +42,10 @@ const Mobile = () => {
 
               <div className=" flex mt-3 ml-[49%]  justify-center item-center space-x-4">
                 <SiFlipkart className="h-7 w-6 mt-1" />
-                <FaRegUserCircle className="h-7 w-6 mt-1 " />{" "}
+                
+                <Link href='/moblogin' >
+                  <FaRegUserCircle className="h-7 w-6 mt-1 " />{" "}
+                </Link>
                 <IoCartOutline className="h-7 w-6 mt-1 " />
                 <CiShop className="h-7 w-6 mt-1" />
               </div>
