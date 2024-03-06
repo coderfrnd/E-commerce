@@ -1,45 +1,40 @@
-import React from 'react'
+import React from "react";
 import { SiFlipkart } from "react-icons/si";
 const page = () => {
   return (
-    <div className='fixed flex flex-col'>
-<div className='w-screen h-20 bg-blue-600 mt-0'></div>
-    <div className='w-screen h-screen flex justify-center items-center flex-col'>
-      
- <div className='w-[80%] h-[60%] border-2  border-black flex  flex-col '>
- <div className="flipkart cursor-pointer mb-4 mt-2 justify-center flex items-center h-20 w-[80%] ml-4 ">
-          <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg" 
-          className='h-20  mr-10 overflow-hidden ml-6'
-          />
+    <div className="grid w-full h-full m-0">
+      <div className="header bg-blue-600 h-24 text-white">
+        <SiFlipkart className="h-16 m-2 w-24" />
+      </div>
+      <div className="flex justify-center p-2 mt-[35%] ">
+        <div className="h-full w-[80%] mt-0 p-2 ">
+          <div className="space-y-4">
+            <input
+              type="text"
+              placeholder=" Name"
+              className="border-2   border-zinc-900 w-[90%] h-10 mt-2 ml-2"
+            />
+            <input
+              type="text"
+              placeholder=" Email"
+              className="border-2  border-zinc-900 w-[90%] h-10 ml-2"
+            />
+            <input
+              type="text"
+              placeholder=" Mobile Number"
+              className="border-2  border-zinc-900 w-[90%] h-10 ml-2 "
+            />
+            <input
+              type="text"
+              placeholder=" Password"
+              className="border-2  border-zinc-900 w-[90%] h-10 ml-2 "
+            />
+            <button className="border-2  border-zinc-900 w-[90%] h-8 ml-2 ">Click</button>
+          </div>
         </div>
- 
-  <div className='m-2 flex flex-col space-y-8 '>
-  <input
-  type="text"   
-  placeholder='name'
-  className='border-2   border-red-800 w-[90%] h-10 mt-2 ml-2'
-  />
-  <input
-  type="text"   
-  placeholder='email'
-  className='border-2  border-red-800 w-[90%] h-10 ml-2'
-  />
-  <input
-  type="text"   
-  placeholder='Number'
-  className='border-2  border-red-800 w-[90%] h-10 ml-2 '
-  />
-  <input
-  type="text"   
-  placeholder='Address'
-  className='border-2  border-red-800 w-[90%] h-10 ml-2 '
-  />
-  </div>
- 
- </div>
+      </div>
     </div>
-    </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;
