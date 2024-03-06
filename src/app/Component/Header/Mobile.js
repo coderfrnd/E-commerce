@@ -24,7 +24,18 @@ const Mobile = () => {
         setIsSidebarOpen(!isSidebarOpen);
         // console.log("Click")
     };
-   
+   const caro = [
+
+    {
+     imageUrl:"https://rukminim2.flixcart.com/fk-p-flap/520/280/image/ec6cf773ae886bd7.jpg?q=20"
+    },
+    {
+      imageUrl:"https://rukminim2.flixcart.com/fk-p-flap/520/280/image/ec6cf773ae886bd7.jpg?q=20"
+     },
+     {
+      imageUrl:"https://rukminim2.flixcart.com/fk-p-flap/520/280/image/ec6cf773ae886bd7.jpg?q=20"
+     }
+   ]
 
     return (
         <div className='h-full w-screen flex flex-col '>
@@ -70,8 +81,8 @@ const Mobile = () => {
           />
         </div>
         <div className='mt-0 mb-0'>
-            <Mobile_Carousel
-            imageUrl="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/ec6cf773ae886bd7.jpg?q=20"
+        <Mobile_Carousel
+          caro={caro}
             />
         </div>
         <div className='m-2 flex flex-row item-center space-x-3'>
@@ -92,7 +103,7 @@ const Mobile = () => {
             title="FOOD"
             />
         </div>
-        <div className='h-10  mt-1 mb-0 flex flex-row w-full'>
+        <div className='h-10  mt-1 mb-0 flex flex-row w-screen'>
       <h2 className='text-gray-800 font-semibold text-lg items-center ml-4 mt-1'>TOP DEALS</h2>
    </div>
         {/* <div className='mb-2 ml-1 mt-0 flex flex-row w-full h-full'> */}
