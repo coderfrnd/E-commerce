@@ -19,11 +19,31 @@ const Mobile = () => {
   // useState to control sidebar visibility
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
+<<<<<<< HEAD
   // Function to toggle sidebar visibility
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
     // console.log("Click")
   };
+=======
+    // Function to toggle sidebar visibility
+    const toggleSidebar = () => {
+        setIsSidebarOpen(!isSidebarOpen);
+        // console.log("Click")
+    };
+   const caro = [
+
+    {
+     imageUrl:"https://rukminim2.flixcart.com/fk-p-flap/520/280/image/ec6cf773ae886bd7.jpg?q=20"
+    },
+    {
+      imageUrl:"https://rukminim2.flixcart.com/fk-p-flap/520/280/image/ec6cf773ae886bd7.jpg?q=20"
+     },
+     {
+      imageUrl:"https://rukminim2.flixcart.com/fk-p-flap/520/280/image/ec6cf773ae886bd7.jpg?q=20"
+     }
+   ]
+>>>>>>> a071a7b0fc207b85282b0f10010e581d8076489c
 
   return (
     <div className="h-full w-screen flex flex-col ">
@@ -38,6 +58,7 @@ const Mobile = () => {
                 />
               </div>
 
+<<<<<<< HEAD
               <div className=" flex mt-3 ml-[49%]  justify-center item-center space-x-4">
                 <SiFlipkart className="h-7 w-6 mt-1" />
                 <FaRegUserCircle className="h-7 w-6 mt-1 " />{" "}
@@ -62,6 +83,79 @@ const Mobile = () => {
             </div>
             <div className="m-2 flex flex-row item-center space-x-3">
               <MobileOffer
+=======
+       
+        <div className="h-full w-screen">
+           
+     {
+       ( isSidebarOpen ? <div className ='h-full w-screen flex flex-col'>
+
+        <div className='flex flex-row '>
+        <div className='w-12 h-12 items-center mt-2 flex justify-center'>
+        <GiHamburgerMenu className='h-8 mt-1 w-6 cursor-pointer  ' onClick={toggleSidebar}/>
+        </div>
+        
+  
+        
+        <div className=' flex mt-3 ml-[49%]  justify-center item-center space-x-4'>
+    
+    <SiFlipkart className="h-7 w-6 mt-1" />
+ 
+      <FaRegUserCircle className="h-7 w-6 mt-1 " />{" "}
+  
+    <IoCartOutline className="h-7 w-6 mt-1 " />
+    
+  <CiShop className="h-7 w-6 mt-1" />
+  
+ {/* <div> */}
+    {/* kk
+ </div> */}
+</div>
+        </div>
+        <div className="search flex flex-row items-center w-full  ">
+          <div className="search-icon cursor-pointer">
+            {" "}
+            {/* <CiSearch className="h-6 w-6" />{" "} */}
+          </div>
+          <input
+            type="text"
+            placeholder= "Search for product, brands and more "
+            className="search-bar border-solid border-2  rounded-md bg-sky-50 w-full p-2"
+            // <CiSearch className="h-6 w-6" />{" "}
+          />
+        </div>
+        <div className='mt-0 mb-0'>
+        <Mobile_Carousel
+          caro={caro}
+            />
+        </div>
+        <div className='m-2 flex flex-row item-center space-x-3'>
+            <MobileOffer
+            imageUrl="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/ec6cf773ae886bd7.jpg?q=20"
+            title="FOOD"
+            />
+             <MobileOffer
+            imageUrl="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/ec6cf773ae886bd7.jpg?q=20"
+            title="FOOD"
+            />
+             <MobileOffer
+            imageUrl="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/ec6cf773ae886bd7.jpg?q=20"
+            title="FOOD"
+            />
+             <MobileOffer
+            imageUrl="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/ec6cf773ae886bd7.jpg?q=20"
+            title="FOOD"
+            />
+        </div>
+        <div className='h-10  mt-1 mb-0 flex flex-row w-screen'>
+      <h2 className='text-gray-800 font-semibold text-lg items-center ml-4 mt-1'>TOP DEALS</h2>
+   </div>
+        {/* <div className='mb-2 ml-1 mt-0 flex flex-row w-full h-full'> */}
+        <div className='h-screen m-0 p-0 w-screen flex flex-col  '>
+            {/* Your other components */}
+            <div className=' flex flex-wrap  m-0 h-screen w-screen overflow-y-auto '>
+                <Mobile_Deals 
+>>>>>>> a071a7b0fc207b85282b0f10010e581d8076489c
                 imageUrl="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/ec6cf773ae886bd7.jpg?q=20"
                 title="FOOD"
               />
