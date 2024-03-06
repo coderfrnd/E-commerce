@@ -14,6 +14,7 @@ import MobileOffer from "../Offers/MobileOffer";
 import Mobile_Deals from "../Deals/Mobile_Deals";
 import Mob_Footer from "../MobileFOOTER/Mob_Footer";
 import ItemsMob from "../Items/ItemsMob";
+import { MdOutlineNavigateNext } from "react-icons/md";
 
 const Mobile = () => {
   // useState to control sidebar visibility
@@ -129,13 +130,12 @@ const Mobile = () => {
             </div>
 
             {/* Items Mobile  */}
-
-            <div className="flex justify-between mr-1 ml-1">
+            <div className="flex justify-between m-2">
               <div>Top Items</div>
-              <div>Icon</div>
+              <div> <MdOutlineNavigateNext className="h-10 w-10 cursor-pointer border-2 rounded-full bg-blue-600 hover:bg-transparent	" /> </div>
             </div>
 
-            <div className="text-black flex">
+            <div className="text-black flex flex-row ">
               <ItemsMob
                 imgURL="https://rukminim2.flixcart.com/image/612/612/xif0q/smartwatch/b/0/1/-original-imagxp8vkpczss32.jpeg?q=70"
                 Name="Fire Boult"
@@ -158,6 +158,7 @@ const Mobile = () => {
                 Discount="20% off"
               />
             </div>
+           
 
             {/* <Mob_Footer  /> */}
             <div className="h-1 m-10 bg-white">A </div>
