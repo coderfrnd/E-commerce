@@ -43,7 +43,7 @@ const Mobile = () => {
               <div className=" flex mt-3 ml-[49%]  justify-center item-center space-x-4">
                 <SiFlipkart className="h-7 w-6 mt-1" />
                 
-                <Link href='/moblogin' >
+                <Link href='/mobsignup' >
                   <FaRegUserCircle className="h-7 w-6 mt-1 " />{" "}
                 </Link>
                 <IoCartOutline className="h-7 w-6 mt-1 " />
@@ -91,9 +91,9 @@ const Mobile = () => {
             </div>
 
             {/* <div className='mb-2 ml-1 mt-0 flex flex-row w-full h-full'> */}
-            <div className="h-screen m-0 p-0 w-screen flex flex-col  ">
+            <div className="h-screen m-0 p-0 w-screen flex flex-col item-center  ">
               {/* Your other components */}
-              <div className=" flex flex-wrap  m-0 h-screen w-screen overflow-y-auto ">
+              <div className=" flex flex-wrap  m-0 h-screen w-screen overflow-y-auto item-center justify-center ">
                 <Mobile_Deals
                   imageUrl="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/ec6cf773ae886bd7.jpg?q=20"
                   title="FOOD"

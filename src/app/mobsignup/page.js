@@ -13,15 +13,15 @@ const page = () => {
   const [mob, setmob] = useState("");
 
   const adduser = async () => {
-    // console.log(name, passo, email, mob);
-    // let result = await fetch("http://localhost:3000/user", {
-    //   method: "POST",
-    //   body: JSON.stringify({ name, email, passo, mob }),
-    // });
-    // result = await result.json();
-    // if (result.success) {
-    //   alert("Go Home ");
-    // }
+    console.log(name, passo, email, mob);
+    let result = await fetch("http://localhost:3000/user", {
+      method: "POST",
+      body: JSON.stringify({ name, email, passo, mob }),
+    });
+    result = await result.json();
+    if (result.success) {
+      alert("Go Home ");
+    }
   };
 
   return (
@@ -49,7 +49,13 @@ const page = () => {
       <div className="flex justify-center p-1 mt-[0%] ">
         <div className="h-full w-[80%] mt-0 p-2  ">
           <div className="space-y-4 ml-2 ">
-           
+            <input
+              type="text"
+              placeholder=" Name"
+              value={name}
+              onChange={(e) => setname(e.target.value)}
+              className="border-2   border-zinc-900 w-[90%] h-10 mt-2 ml-2"
+            />
             <input
               type="text"
               placeholder=" Email"
@@ -57,7 +63,13 @@ const page = () => {
               onChange={(e) => setemail(e.target.value)}
               className="border-2  border-zinc-900 w-[90%] h-10 ml-2"
             />
-           
+            <input
+              type="text"
+              placeholder=" Mobile Number"
+              value={mob}
+              onChange={(e) => setmob(e.target.value)}
+              className="border-2  border-zinc-900 w-[90%] h-10 ml-2 "
+            />
             <input
               type="password"
               placeholder=" Password"

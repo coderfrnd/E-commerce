@@ -1,10 +1,26 @@
 import mongoose from "mongoose";
 
 const user=new mongoose.Schema({
-    name:String,
-    Password:String,
-    email:String,
-    mob:String
+    name:{
+        // name:String
+        type:String,
+        required:true,
+    },
+    email:{
+        type:String,
+        required:true,
+        unique:true
+    },
+     
+    password:{
+        // name:String
+        type:String,
+        required:true,
+    },
+    mob:{
+        type:String,
+        required:true
+    }
 
 });
 export const Product =  mongoose.models && mongoose.models.ours 
