@@ -65,7 +65,7 @@ const Mobile = () => {
             <div className="mt-0 mb-0">
               <Mobile_Carousel imageUrl="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/ec6cf773ae886bd7.jpg?q=20" />
             </div>
-            <div className="m-2 flex flex-row item-center space-x-3">
+            <div className="m-2 flex flex-row item-center space-x-3 flex-nowrap">
               <MobileOffer
                 imageUrl="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/ec6cf773ae886bd7.jpg?q=20"
                 title="FOOD"
@@ -82,6 +82,8 @@ const Mobile = () => {
                 imageUrl="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/ec6cf773ae886bd7.jpg?q=20"
                 title="FOOD"
               />
+              
+              
             </div>
 
             <div className="h-10  mt-1 mb-0 flex flex-row w-full">
@@ -139,7 +141,7 @@ const Mobile = () => {
               <div> <MdOutlineNavigateNext className="h-10 w-10 cursor-pointer border-2 rounded-full bg-blue-600 hover:bg-transparent	" /> </div>
             </div>
 
-            <div className="text-black flex flex-row ">
+            <div className="text-black  w-screen m-2 flex flex-row item-center space-x-3">
               <ItemsMob
                 imgURL="https://rukminim2.flixcart.com/image/612/612/xif0q/smartwatch/b/0/1/-original-imagxp8vkpczss32.jpeg?q=70"
                 Name="Fire Boult"
@@ -161,6 +163,15 @@ const Mobile = () => {
                 Price="$49"
                 Discount="20% off"
               />
+               <ItemsMob
+                imgURL="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/k/2/m/-original-imagxvyxc9su7u6y.jpeg?q=70"
+                Name="Adida"
+                Specs="Light Weight, Comfort "
+                Price="$49"
+                Discount="20% off"
+              />
+              
+              
             </div>
            
 
