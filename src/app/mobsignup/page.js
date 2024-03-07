@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import React, { useState } from "react";
 import { SiFlipkart } from "react-icons/si";
 // import { POST } from "../user/route";
