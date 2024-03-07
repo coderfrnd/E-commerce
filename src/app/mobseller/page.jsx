@@ -1,6 +1,7 @@
 import React from 'react'
 import Nav from '../Component/Moblie_seller/Nav'
 import MainBody from '../Component/Moblie_seller/MainBody'
+import SuccessStories from '../Component/Moblie_seller/SuccessStories'
 Nav
 
 function page() {
@@ -8,6 +9,7 @@ function page() {
     <div>
         <Nav />
         <MainBody />
+        <SuccessStories />
     </div>
   )
 }
