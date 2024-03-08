@@ -5,7 +5,7 @@ import { SiFlipkart } from "react-icons/si";
 import { FaUserSecret } from "react-icons/fa6";
 import Link from "next/link";
 // import { IoLogIn } from "react-icons/io5";
-const page = () => {
+const Page = () => {
   //  useState
   const [name, setname] = useState("");
   const [passo, setpass] = useState("");
@@ -90,4 +90,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
