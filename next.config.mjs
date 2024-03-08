@@ -1,8 +1,9 @@
 const nextConfig = {
-    eslint: {
-        ignoreDuringBuilds: true,
+    images: {
+      domains: ['rukminim2.flixcart.com'], // Add the hostname here
     },
-/* ...Your other config rules */
-}
+  };
+  
+//   export  nextConfig;
 
-module.exports = nextConfig
+export default nextConfig;
