@@ -11,7 +11,9 @@ export async function GET(){
     const data= await Product.find()
     console.log(data)
     return NextResponse.json({
+        data,
         result:true
+
     })
 }
 
