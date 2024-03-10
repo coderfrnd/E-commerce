@@ -89,7 +89,7 @@ const Mobile = () => {
             <div className="h-10  mt-1 mb-0 flex flex-row w-full">
               <h2 className="text-gray-800 font-semibold text-lg items-center ml-4 mt-1">
                 TOP DEALS
-              </h2>
+              </h2> 
             </div>
 
             {/* <div className='mb-2 ml-1 mt-0 flex flex-row w-full h-full'> */}
