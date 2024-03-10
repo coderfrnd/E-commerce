@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { FaPeopleGroup } from "react-icons/fa6";
 
@@ -16,10 +17,12 @@ function Nav() {
 
       <div className="flex justify-between items-center p-2">
         <div>
+          <Link href='/'>
           <img
             src="https://static-assets-web.flixcart.com/fk-sp-static/images/flipkart_logo_color_revamp.svg"
             alt=""
           />
+          </Link>
         </div>
         <button className="p-3 bg-yellow-400">Start Selling</button>
       </div>

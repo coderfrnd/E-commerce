@@ -76,7 +76,7 @@ function CreateAccount() {
 
                 {/* Categories  */}
 
-                <div className="main border rounded-3xl shadow-md shadow-slate-400 p-3">
+                <div className="main border rounded-3xl shadow-md shadow-slate-400 p-3 mb-10">
                     <div className="heading mt-5">
                         <h2>Popular categories to sell accross India</h2>
                     </div>
@@ -106,6 +106,8 @@ function CreateAccount() {
                         </ul>
                     </div>
                 </div>
+
+                <hr />
 
             </div>
         </div>
