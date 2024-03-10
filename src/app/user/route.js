@@ -5,7 +5,6 @@ import mongoose from "mongoose";
 import { NextResponse } from "next/server";
 
 export async function GET(){
-// uri
     await mongoose.connect(uri)
 
     const data= await Product.find()

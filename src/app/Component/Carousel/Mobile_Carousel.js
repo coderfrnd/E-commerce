@@ -1,5 +1,9 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { BsChevronLeft } from 'react-icons/bs';
 import { MdNavigateNext } from "react-icons/md";
+import { FaChevronLeft } from "react-icons/fa";
+import { FaChevronRight } from "react-icons/fa";
+
 
 const Mobile_Carousel = () => {
   // useState
@@ -30,72 +34,52 @@ const Mobile_Carousel = () => {
     }
     else{
       setTrey(trey-1)
-
     }
   }
+  useEffect(() => {
+    const slideInterval = setInterval(stright, 1000); // Call the correct function here
+    return () => clearInterval(slideInterval);
+  }, []);
+  
 
   return (
-    <div className="bg-white shadow-md rounded-md overflow-hidden relative"> {/* Added relative positioning */}
-      <div className="carousel flex w-screen relative">
-        <img src={caro[trey].imageUrl} alt={`Image ${trey}`} className="w-full h-40 object-cover"
-        
-        
-        />
-       
-        {/* <MdNavigateNext className="absolute top-1/2 right-2 transform -translate-y-1/2 text-black text-[200%]" /> Added Tailwind classes for positioning */}
-        <button
-        type="button"
-        className="absolute top-1 end-0 z-35 flex items-center justify-center h-full px-[85%] cursor-pointer group focus:outline-none"
-        data-carousel-next
-        onClick={stright}
+    <div className='overflow-hidden relative h-auto' > {/* Adjust the height here */}
+      <div className='flex h-full transition-transform ease-out duration-500'
+      style={{transform:`translateX(-${trey*100}%)`}}
       >
-       
-        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/20 ">
-          <svg
-            className="w-4 h-4 text-white dark:text-gry-800 rtl:rotate-180"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 6 10"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="m1 9 4-4-4-4"
-            />
-          </svg>
-          <span className="sr-only">Next</span>
-        </span>
-      </button>
-      <button
-        type="button"
-        className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-2 cursor-pointer group focus:outline-none"
-        data-carousel-next
-        onClick={stright}
-      >
-        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/20 ">
-          <svg
-            className="w-4 h-4 text-white dark:text-gray-600 rtl:rotate-180"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 6 10"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="m1 9 4-4-4-4"
-            />
-          </svg>
-          <span className="sr-only">Next</span>
-        </span>
-      </button>
+        {caro.map((item, index) => (
+          <img
+            key={index}
+            src={item.imageUrl}
+            alt=""
+            className={index === trey ? 'w-full h-full' : 'hidden'} 
+          />
+        ))}
       </div>
-     
+      <div className='absolute inset-0 flex items-center justify-between p-4'>
+        <button className='p-1 rounded-full shadow bg-gray-200 text-gray-900 hover:bg-white'
+        onClick={stright}
+        >
+<FaChevronLeft size={30}/>
+        </button>
+        <button className='p-1 rounded-full shadow bg-white/80 text-gray-900 hover:bg-white'
+        onClick={backup}
+        >
+<FaChevronRight size={30}/>
+        </button>
+
+      </div>
+      <div className='absolute bottom-4 right-0 left-0'>
+  <div className='flex items-center justify-center gap-2'>
+    {caro.map((_, i) => (
+      <div
+        key={i}
+        className={`transition-all w-3 h-3 bg-white rounded-full ${trey === i ? "p-2" : "bg-opacity-50"}`}
+      />
+    ))}
+  </div>
+</div>
+
     </div>
   );
 }

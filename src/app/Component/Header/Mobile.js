@@ -62,8 +62,8 @@ const Mobile = () => {
                 // <CiSearch className="h-6 w-6" />{" "}
               />
             </div>
-            <div className="mt-0 mb-0">
-              <Mobile_Carousel imageUrl="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/ec6cf773ae886bd7.jpg?q=20" />
+            <div className="mt-0 mb-0 ">
+              <Mobile_Carousel />
             </div>
             <div className="m-2 flex flex-row item-center space-x-3 flex-nowrap">
               <MobileOffer
