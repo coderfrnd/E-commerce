@@ -65,22 +65,22 @@ const Mobile = () => {
             <div className="mt-0 mb-0">
               <Mobile_Carousel imageUrl="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/ec6cf773ae886bd7.jpg?q=20" />
             </div>
-            <div className="m-2 flex flex-row item-center space-x-3 flex-nowrap">
+            <div className="m-2 flex flex-row justify-around item-center space-x-3 flex-nowrap">
               <MobileOffer
                 imageUrl="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/ec6cf773ae886bd7.jpg?q=20"
                 title="FOOD"
               />
               <MobileOffer
-                imageUrl="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/ec6cf773ae886bd7.jpg?q=20"
-                title="FOOD"
+                imageUrl="https://rukminim2.flixcart.com/flap/80/80/image/ab7e2b022a4587dd.jpg?q=100"
+                title="Furniture"
               />
               <MobileOffer
-                imageUrl="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/ec6cf773ae886bd7.jpg?q=20"
-                title="FOOD"
+                imageUrl="https://rukminim2.flixcart.com/fk-p-flap/1000/440/image/52f29aa158949b61.png?q=20"
+                title="Appliances"
               />
               <MobileOffer
-                imageUrl="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/ec6cf773ae886bd7.jpg?q=20"
-                title="FOOD"
+                imageUrl="https://rukminim2.flixcart.com/fk-p-flap/1000/440/image/37f14bae44906281.png?q=20"
+                title="Laptops"
               />
               
               
@@ -95,7 +95,7 @@ const Mobile = () => {
             {/* <div className='mb-2 ml-1 mt-0 flex flex-row w-full h-full'> */}
             <div className="h-screen m-0 p-0 w-screen flex flex-col item-center  ">
               {/* Your other components */}
-              <div className=" flex flex-wrap  m-0 h-screen w-screen overflow-y-auto item-center justify-center ">
+              <div className=" flex flex-wrap  m-0 h-screen w-screen overflow-hidden item-center justify-center ">
                 <Mobile_Deals
                   imageUrl="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/ec6cf773ae886bd7.jpg?q=20"
                   title="FOOD"
@@ -105,31 +105,31 @@ const Mobile = () => {
                 <Mobile_Deals
                   imageUrl="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/9926b000d9e06f79.jpg?q=20"
                   title="ELECTRONICS"
-                  offer="56% off"
+                  offer="flat 25% off"
                   // className='mb-2'
                 />
                 <Mobile_Deals
                   imageUrl="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/81035a28051d094e.jpg?q=20"
                   title="MOBILE"
-                  offer="56% off"
+                  offer="upto 15% off"
                   // className='mb-2'
                 />
                 <Mobile_Deals
-                  imageUrl="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/81035a28051d094e.jpg?q=20"
-                  title="MOBILE"
-                  offer="56% off"
+                  imageUrl="https://rukminim2.flixcart.com/fk-p-flap/450/280/image/353000d800191473.png?q=20"
+                  title="WATCH"
+                  offer="Just $200"
                   // className='mb-2'
                 />
                 <Mobile_Deals
-                  imageUrl="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/81035a28051d094e.jpg?q=20"
-                  title="MOBILE"
-                  offer="56% off"
+                  imageUrl="https://rukminim2.flixcart.com/fk-p-flap/450/280/image/a8007f211db6578a.png?q=20"
+                  title="COLGATE"
+                  offer="Min 56% off"
                   // className='mb-2'
                 />
                 <Mobile_Deals
-                  imageUrl="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/81035a28051d094e.jpg?q=20"
-                  title="MOBILE"
-                  offer="56% off"
+                  imageUrl="https://rukminim2.flixcart.com/fk-p-flap/450/280/image/e53ffbe185bb7d85.png?q=20"
+                  title="Shoes"
+                  offer="45% off"
                   // className='mb-2'
                 />
               </div>
