@@ -141,7 +141,7 @@ const Mobile = () => {
               <div> <MdOutlineNavigateNext className="h-10 w-10 cursor-pointer border-2 rounded-full bg-blue-600 hover:bg-transparent	" /> </div>
             </div>
 
-            <div className="text-black  w-screen m-2 flex flex-row item-center space-x-3">
+            <div className="text-black  w-screen m-auto flex flex-row item-center ">
               <ItemsMob
                 imgURL="https://rukminim2.flixcart.com/image/612/612/xif0q/smartwatch/b/0/1/-original-imagxp8vkpczss32.jpeg?q=70"
                 Name="Fire Boult"
@@ -163,13 +163,13 @@ const Mobile = () => {
                 Price="$49"
                 Discount="20% off"
               />
-               <ItemsMob
+               {/* <ItemsMob
                 imgURL="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/k/2/m/-original-imagxvyxc9su7u6y.jpeg?q=70"
                 Name="Adida"
                 Specs="Light Weight, Comfort "
                 Price="$49"
                 Discount="20% off"
-              />
+              /> */}
               
               
             </div>

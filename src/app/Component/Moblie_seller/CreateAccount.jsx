@@ -22,11 +22,11 @@
 //                 </p>
 
 //                 <p className="text-sm text-slate-500 mt-1 mb-1 pb-4 pt-4">
-//                     * for selling in all categories except for books
+//                      for selling in all categories except for books
 //                 </p>
 
 //                 <p className="text-sm text-slate-500 mt-1 mb-1 pb-4 pt-4">
-//                     ** for selling under books category
+//                      for selling under books category
 //                 </p>
 
 //                 <div className="mb-5">
