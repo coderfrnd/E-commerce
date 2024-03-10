@@ -49,9 +49,9 @@ const Mob_Footer = ({ color }) => {
         <h3 className="font-bold">USER</h3>
       </div>
       <div className="w-1/5 text-center flex  items-center flex-col">
-        {/* <Link href="mobseller"> */}
+        <Link href="mobseller">
           <CiShop size="1.5em" />
-        {/* </Link> */}
+        </Link>
         <h3 className="font-bold">SELLER</h3>
       </div>
       <div className="w-1/5 text-center flex  items-center flex-col">
