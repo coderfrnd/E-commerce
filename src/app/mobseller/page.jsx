@@ -13,7 +13,7 @@ function page() {
         <MainBody />
         <SuccessStories />
         <hr />
-        <CreateAccount />
+        {/* <CreateAccount /> */}
         <Footer />
     </div>
   )
