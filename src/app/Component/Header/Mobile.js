@@ -16,6 +16,7 @@ import Mob_Footer from "../MobileFOOTER/Mob_Footer";
 import ItemsMob from "../Items/ItemsMob";
 import { MdOutlineNavigateNext } from "react-icons/md";
 import Link from "next/link";
+import Main from "../SmartGadgets/Main";
 
 const Mobile = () => {
   // useState to control sidebar visibility
@@ -42,7 +43,7 @@ const Mobile = () => {
 
               <div className=" flex mt-3 ml-[49%]  justify-center item-center space-x-4">
                 <SiFlipkart className="h-7 w-6 mt-1" />
-                
+
                 <Link href='/mobsignup' >
                   <FaRegUserCircle className="h-7 w-6 mt-1 " />{" "}
                 </Link>
@@ -59,7 +60,7 @@ const Mobile = () => {
                 type="text"
                 placeholder="Search for product, brands and more "
                 className="search-bar border-solid border-2  rounded-md bg-sky-50 w-full p-2"
-                // <CiSearch className="h-6 w-6" />{" "}
+              // <CiSearch className="h-6 w-6" />{" "}
               />
             </div>
             <div className="mt-0 mb-0 ">
@@ -82,14 +83,14 @@ const Mobile = () => {
                 imageUrl="https://rukminim2.flixcart.com/fk-p-flap/1000/440/image/37f14bae44906281.png?q=20"
                 title="Laptops"
               />
-              
-              
+
+
             </div>
 
             <div className="h-10  mt-1 mb-0 flex flex-row w-full">
               <h2 className="text-gray-800 font-semibold text-lg items-center ml-4 mt-1">
                 TOP DEALS
-              </h2> 
+              </h2>
             </div>
 
             {/* <div className='mb-2 ml-1 mt-0 flex flex-row w-full h-full'> */}
@@ -100,37 +101,37 @@ const Mobile = () => {
                   imageUrl="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/ec6cf773ae886bd7.jpg?q=20"
                   title="FOOD"
                   offer="56% off"
-                  // className='mb-2'
+                // className='mb-2'
                 />
                 <Mobile_Deals
                   imageUrl="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/9926b000d9e06f79.jpg?q=20"
                   title="ELECTRONICS"
                   offer="flat 25% off"
-                  // className='mb-2'
+                // className='mb-2'
                 />
                 <Mobile_Deals
                   imageUrl="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/81035a28051d094e.jpg?q=20"
                   title="MOBILE"
                   offer="upto 15% off"
-                  // className='mb-2'
+                // className='mb-2'
                 />
                 <Mobile_Deals
                   imageUrl="https://rukminim2.flixcart.com/fk-p-flap/450/280/image/353000d800191473.png?q=20"
                   title="WATCH"
                   offer="Just $200"
-                  // className='mb-2'
+                // className='mb-2'
                 />
                 <Mobile_Deals
                   imageUrl="https://rukminim2.flixcart.com/fk-p-flap/450/280/image/a8007f211db6578a.png?q=20"
                   title="COLGATE"
                   offer="Min 56% off"
-                  // className='mb-2'
+                // className='mb-2'
                 />
                 <Mobile_Deals
                   imageUrl="https://rukminim2.flixcart.com/fk-p-flap/450/280/image/e53ffbe185bb7d85.png?q=20"
                   title="Shoes"
                   offer="45% off"
-                  // className='mb-2'
+                // className='mb-2'
                 />
               </div>
             </div>
@@ -163,17 +164,21 @@ const Mobile = () => {
                 Price="$49"
                 Discount="20% off"
               />
-               {/* <ItemsMob
+              {/* <ItemsMob
                 imgURL="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/k/2/m/-original-imagxvyxc9su7u6y.jpeg?q=70"
                 Name="Adida"
                 Specs="Light Weight, Comfort "
                 Price="$49"
                 Discount="20% off"
               /> */}
-              
-              
+
+
             </div>
-           
+
+            <div className="w-screen">
+              <Main />
+            </div>
+
 
             {/* <Mob_Footer  /> */}
             <div className="h-1 m-10 bg-white">A </div>
