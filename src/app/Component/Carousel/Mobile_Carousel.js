@@ -36,16 +36,15 @@ const Mobile_Carousel = () => {
       setTrey(trey-1)
     }
   }
-  useEffect(() => {
-    const slideInterval = setInterval(stright, 1000); // Call the correct function here
-    return () => clearInterval(slideInterval);
-  }, []);
+  // useEffect(() => {
+  //   const slideInterval = setInterval(stright, 1000); // Call the correct function here
+  //   return () => clearInterval(slideInterval);
+  // }, []);
   
 
   return (
     <div className='overflow-hidden relative h-auto' > {/* Adjust the height here */}
-      <div className='flex h-full transition-transform ease-out duration-500'
-      style={{transform:`translateX(-${trey*100}%)`}}
+      <div className='flex h-full '
       >
         {caro.map((item, index) => (
           <img
@@ -69,7 +68,7 @@ const Mobile_Carousel = () => {
         </button>
 
       </div>
-      <div className='absolute bottom-4 right-0 left-0'>
+      {/* <div className='absolute bottom-4 right-0 left-0'>
   <div className='flex items-center justify-center gap-2'>
     {caro.map((_, i) => (
       <div
@@ -78,7 +77,7 @@ const Mobile_Carousel = () => {
       />
     ))}
   </div>
-</div>
+</div> */}
 
     </div>
   );
