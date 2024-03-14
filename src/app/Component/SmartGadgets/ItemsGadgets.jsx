@@ -8,7 +8,7 @@ function ItemsGadgets({imgURL, about, price}) {
                 <img className='h-28 w-28 object-fill' src={imgURL} alt="" />
             </div>
             <div>{about}</div>
-            <div>{price}</div>
+            <div className='text-green-500 font-bold ' >{price}</div>
         </div>
     </div>
   )
