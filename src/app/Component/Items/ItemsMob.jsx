@@ -6,7 +6,7 @@ function ItemsMob({ imgURL, Name, Specs, Price, Discount, link }) {
         <div className="w-screen border m-1">
             {/* Items list and photos */}
             <div className="flex">
-                    {/* <Link href={link}> */}
+                    <Link href={link}>
                 <div className=" mr-2 ml-2">
                         <div className="h-40 w-35 flex justify-center items-center overflow-hidden">
                             <img className="overflow-hidden " src={imgURL} alt="" />
@@ -29,7 +29,7 @@ function ItemsMob({ imgURL, Name, Specs, Price, Discount, link }) {
                             <b>{Discount}</b>
                         </div>
                 </div>
-                    {/* </Link> */}
+                    </Link>
             </div>
         </div>
     );

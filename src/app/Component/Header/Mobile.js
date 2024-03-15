@@ -145,15 +145,16 @@ const Mobile = () => {
             </div>
 
             <div className="text-black  w-screen m-auto flex flex-row item-center ">
-              
+              <Link href='/fireboult'>
               <ItemsMob
                 imgURL="https://rukminim2.flixcart.com/image/612/612/xif0q/smartwatch/b/0/1/-original-imagxp8vkpczss32.jpeg?q=70"
                 Name="Fire Boult"
                 Specs="Gray Strap, Free Size"
                 Price="$199"
                 Discount="35% off"
-                link='/fireboult'
-              />
+                link= {'/fireboult'}
+                />
+                </Link>
               <ItemsMob
                 imgURL="https://rukminim2.flixcart.com/image/612/612/xif0q/sunglass/a/y/s/57-vc-s13835-vincent-chase-original-imagx8jejpzwgnt6.jpeg?q=70"
                 Name="Vincent Chase"
