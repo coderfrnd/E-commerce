@@ -15,6 +15,7 @@ const MobileOffer = ({ imageUrl, title, price }) => {
       </style>
       <img src={imageUrl} alt={title} className="rounded-full w-24 h-24 md:w-32 md:h-32 object-cover circular-image" />
       <h2 className="text-gray-800 text-center font-semibold text-lg mt-2">{title}</h2>
+      <p className="text-gray-600 mt-1">{price}</p>
     </div>
   );
 };

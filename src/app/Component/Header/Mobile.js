@@ -82,6 +82,14 @@ const Mobile = () => {
                 imageUrl="https://rukminim2.flixcart.com/fk-p-flap/1000/440/image/37f14bae44906281.png?q=20"
                 title="Laptops"
               />
+               <MobileOffer
+                imageUrl="https://rukminim2.flixcart.com/fk-p-flap/1000/440/image/37f14bae44906281.png?q=20"
+                title="Laptops"
+              />
+               <MobileOffer
+                imageUrl="https://rukminim2.flixcart.com/fk-p-flap/1000/440/image/37f14bae44906281.png?q=20"
+                title="Laptops"
+              />
               
               
             </div>
