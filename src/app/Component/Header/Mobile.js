@@ -85,14 +85,8 @@ const Mobile = () => {
                 imageUrl="https://rukminim2.flixcart.com/fk-p-flap/1000/440/image/37f14bae44906281.png?q=20"
                 title="Laptops"
               />
-               <MobileOffer
-                imageUrl="https://rukminim2.flixcart.com/fk-p-flap/1000/440/image/37f14bae44906281.png?q=20"
-                title="Laptops"
-              />
-               <MobileOffer
-                imageUrl="https://rukminim2.flixcart.com/fk-p-flap/1000/440/image/37f14bae44906281.png?q=20"
-                title="Laptops"
-              />
+               
+               
               
               
             </div>
@@ -153,7 +147,7 @@ const Mobile = () => {
             </div>
 
             <div className="text-black  w-screen m-auto flex flex-row item-center ">
-              <Link href='/fireboult'>
+              
               <ItemsMob
                 imgURL="https://rukminim2.flixcart.com/image/612/612/xif0q/smartwatch/b/0/1/-original-imagxp8vkpczss32.jpeg?q=70"
                 Name="Fire Boult"
@@ -162,13 +156,14 @@ const Mobile = () => {
                 Discount="35% off"
                 link= {'/fireboult'}
                 />
-                </Link>
+              
               <ItemsMob
                 imgURL="https://rukminim2.flixcart.com/image/612/612/xif0q/sunglass/a/y/s/57-vc-s13835-vincent-chase-original-imagx8jejpzwgnt6.jpeg?q=70"
                 Name="Vincent Chase"
                 Specs="UV Protection"
                 Price="$9"
                 Discount="15% off"
+                link= {'/fireboult'}
               />
               <ItemsMob
                 imgURL="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/k/2/m/-original-imagxvyxc9su7u6y.jpeg?q=70"
@@ -176,6 +171,7 @@ const Mobile = () => {
                 Specs="Light Weight, Comfort "
                 Price="$49"
                 Discount="20% off"
+                link= {'/fireboult'}
               />
               {/* <ItemsMob
                 imgURL="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/k/2/m/-original-imagxvyxc9su7u6y.jpeg?q=70"

@@ -60,13 +60,13 @@ const Mobile_Carousel = () => {
           className="p-1 rounded-full shadow bg-gray-200 text-gray-900 hover:bg-white"
           onClick={backup}
         >
-          <FaChevronLeft size={30} />
+          <FaChevronLeft size={15} />
         </button>
         <button
           className="p-1 rounded-full shadow bg-white/80 text-gray-900 hover:bg-white"
           onClick={stright}
         >
-          <FaChevronRight size={30} />
+          <FaChevronRight size={15} />
         </button>
       </div>
     </div>
