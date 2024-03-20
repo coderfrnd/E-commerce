@@ -6,6 +6,7 @@ import { IoBusinessOutline } from "react-icons/io5";
 import { CiShop, CiShoppingCart } from "react-icons/ci";
 import { CiSquareMore } from "react-icons/ci";
 import Link from "next/link";
+import { TbCategory } from "react-icons/tb";
 
 const Mob_Footer = ({ color }) => {
   const router = useRouter();
@@ -34,33 +35,35 @@ const Mob_Footer = ({ color }) => {
 
   return (
     <div
-      className={`fixed bottom-0 left-0 w-screen flex justify-between items-center bg-${
+      className={`fixed bottom-0 left-0 w-screen flex justify-around items-center bg-${
         Header ? "black" : "white"
-      } text-${Header ? "white" : "black"} border-t border-gray-300 px-4 py-2`}
+      } text-${Header ? "white" : "black"} border-t border-gray-300 px-4 py-0`}
     >
       <div className="w-1/5 text-center flex  items-center flex-col">
         <IoHomeOutline size="1.5em" />
-        <h3 className="font-bold">Home</h3>
+        <h3 className="font-semibold text-xs">Home</h3>
       </div>
       <div className="w-1/5 text-center flex  items-center flex-col">
-        <Link href="/moblogin">
-          <FaRegUser size="1.5em" />
+        <Link href="/categories">
+          <TbCategory size="1.5em" />
         </Link>
-        <h3 className="font-bold">USER</h3>
+        <h3 className="font-semibold text-xs">CATEGORIES</h3>
       </div>
       <div className="w-1/5 text-center flex  items-center flex-col">
         <Link href="mobseller">
           <CiShop size="1.5em" />
         </Link>
-        <h3 className="font-bold">SELLER</h3>
+        <h3 className="font-semibold text-xs">SELLER</h3>
       </div>
       <div className="w-1/5 text-center flex  items-center flex-col">
         <CiShoppingCart size="1.5em" />
-        <h3 className="font-bold">CART</h3>
+        <h3 className="font-semibold text-xs">CART</h3>
       </div>
       <div className="w-1/5 text-center flex  items-center flex-col">
-        <CiSquareMore size="1.5em" />
-        <h3 className="font-bold">MORE</h3>
+        <Link href="/moblogin">
+          <FaRegUser size="1.5em" />
+        </Link>
+        <h3 className="font-semibold text-xs">USER</h3>
       </div>
     </div>
   );

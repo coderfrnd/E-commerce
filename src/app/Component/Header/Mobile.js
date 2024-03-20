@@ -190,7 +190,7 @@ const Mobile = () => {
 
 
             {/* <Mob_Footer  /> */}
-            <div className="h-1 m-10 bg-white">A </div>
+            <div className="h-1 m-1 bg-white">A </div>
             <div className="bg-black ">
               <Mob_Footer />
             </div>
