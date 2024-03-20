@@ -40,7 +40,7 @@ const Mobile_Carousel = () => {
   }
 
   return (
-    <div className="overflow-hidden relative h-[320px]">
+    <div className="overflow-hidden relative h-[150px]">
       <div className="flex h-full ">
         {caro.map((item, index) => (
           <img
