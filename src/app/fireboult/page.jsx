@@ -203,7 +203,7 @@ function page() {
       <div className="px-2 py-4">
         <div className="flex items-center justify-between p-2">
           <div className="">Ratings & Review</div>
-          <button className="p-2">Rate Product</button>
+          <button className="p-2 px-6 border border-slate-400 rounded-lg text-blue-600">Rate Product</button>
         </div>
 
         <div className="flex justify-between">
@@ -222,35 +222,50 @@ function page() {
           </div>
 
           <div className="w-[50%] text-sm border-l pl-5 ml-2">
-            <div className="flex items-center">
+            <div className="flex justify-between items-center">
               <div>5</div>
-              <IoIosStar />
-              <div>Bar</div>
-              <div className="text-slate-500 text-xs">1,24,978</div>
+              <IoIosStar className="w-7 h-7" />
+              <div className="w-[90%] h-full flex ml-2 pr-6 items-center relative">
+                <div className="w-[90%] rounded-xl border-slate-300 h-full border-t-4 absolute"></div>
+                <div className="w-[90%] rounded-xl border-green-600 h-full border-t-4 absolute"></div>
+              </div>
+              <div className="text-slate-500 text-xs w-full ">1,24,978</div>
             </div>
-            <div className="flex items-center">
-              <div>5</div>
-              <IoIosStar />
-              <div>Bar</div>
-              <div className="text-slate-500 text-xs">1,24,978</div>
+            <div className="flex justify-between items-center">
+              <div>4</div>
+              <IoIosStar className="w-7 h-7" />
+              <div className="w-[90%] h-full flex ml-2 pr-6 items-center relative">
+                <div className="w-[90%] rounded-xl border-slate-300 h-full border-t-4 absolute"></div>
+                <div className="w-[35%] rounded-xl border-green-600 h-full border-t-4 absolute"></div>
+              </div>
+              <div className="text-slate-500 text-xs w-full ">41,446</div>
             </div>
-            <div className="flex items-center">
-              <div>5</div>
-              <IoIosStar />
-              <div>Bar</div>
-              <div className="text-slate-500 text-xs">1,24,978</div>
+            <div className="flex justify-between items-center">
+              <div>3</div>
+              <IoIosStar className="w-7 h-7" />
+              <div className="w-[90%] h-full flex ml-2 pr-6 items-center relative">
+                <div className="w-[90%] rounded-xl border-slate-300 h-full border-t-4 absolute"></div>
+                <div className="w-[50%] rounded-xl border-green-600 h-full border-t-4 absolute"></div>
+              </div>
+              <div className="text-slate-500 text-xs w-full ">12,310</div>
             </div>
-            <div className="flex items-center">
-              <div>5</div>
-              <IoIosStar />
-              <div>Bar</div>
-              <div className="text-slate-500 text-xs">1,24,978</div>
+            <div className="flex justify-between items-center">
+              <div>2</div>
+              <IoIosStar className="w-7 h-7" />
+              <div className="w-[90%] h-full flex ml-2 pr-6 items-center relative">
+                <div className="w-[90%] rounded-xl border-slate-300 h-full border-t-4 absolute"></div>
+                <div className="w-[20%] rounded-xl border-green-600 h-full border-t-4 absolute"></div>
+              </div>
+              <div className="text-slate-500 text-xs w-full ">1200</div>
             </div>
-            <div className="flex items-center">
-              <div>5</div>
-              <IoIosStar />
-              <div>Bar</div>
-              <div className="text-slate-500 text-xs">1,24,978</div>
+            <div className="flex justify-between items-center">
+              <div>1</div>
+              <IoIosStar className="w-7 h-7" />
+              <div className="w-[90%] h-full flex ml-2 pr-6 items-center relative">
+                <div className="w-[90%] rounded-xl border-slate-300 h-full border-t-4 absolute"></div>
+                <div className="w-[11%] rounded-xl border-green-600 h-full border-t-4 absolute"></div>
+              </div>
+              <div className="text-slate-500 text-xs w-full ">5260</div>
             </div>
           </div>
         </div>
