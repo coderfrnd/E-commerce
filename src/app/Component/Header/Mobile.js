@@ -163,7 +163,7 @@ const Mobile = () => {
                 Specs="UV Protection"
                 Price="$9"
                 Discount="15% off"
-                link= {'/fireboult'}
+                link= {'/vincentchase'}
               />
               <ItemsMob
                 imgURL="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/k/2/m/-original-imagxvyxc9su7u6y.jpeg?q=70"
