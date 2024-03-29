@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useRef, useState, useEffect } from "react";
 import { SlGraph } from "react-icons/sl";
 import { IoIosStar, IoIosStarOutline } from "react-icons/io";
 import { IoMdStarOutline } from "react-icons/io";
@@ -12,8 +14,32 @@ import { CiSearch } from "react-icons/ci";
 import { FaUserCheck } from "react-icons/fa";
 import Link from "next/link";
 import { RiBarChartGroupedFill } from "react-icons/ri";
+useState
 
 function page() {
+    
+    const [showPopup, setShowPopup] = useState(false);
+    const popupRef = useRef(null);
+
+    const togglePopup = ()=>{
+        setShowPopup(!showPopup);
+    };
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+          if (popupRef.current && !popupRef.current.contains(event.target)) {
+            setShowPopup(false);
+          }
+        };
+    
+        document.addEventListener('mouseout', handleClickOutside);
+    
+        return () => {
+          document.removeEventListener('mouseover', handleClickOutside);
+        };
+      }, []);
+    
+
     return (
         <div className="">
             <header className="flex justify-between py-4 sticky top-0 bg-white">
@@ -76,8 +102,16 @@ function page() {
                 <div className="m-2">
                     <img
                         src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/k/2/m/-original-imagxvyxc9su7u6y.jpeg?q=70"
-                        alt=""
+                        alt="" onClick={togglePopup}
                     />
+
+                    {
+                        showPopup && (
+                            <div ref={popupRef} className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-70 z-50">
+                                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/k/2/m/-original-imagxvyxc9su7u6y.jpeg?q=7" alt=""  className="max-w-3/4 max-h-3/4" />
+                            </div>
+                        )
+                    }
                 </div>
             </div>
 
