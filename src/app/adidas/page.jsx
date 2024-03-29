@@ -32,10 +32,10 @@ function page() {
           }
         };
     
-        document.addEventListener('mouseout', handleClickOutside);
+        document.addEventListener('mousedown', handleClickOutside);
     
         return () => {
-          document.removeEventListener('mouseover', handleClickOutside);
+          document.removeEventListener('mousedown', handleClickOutside);
         };
       }, []);
     
