@@ -171,7 +171,7 @@ const Mobile = () => {
                 Specs="Light Weight, Comfort "
                 Price="$49"
                 Discount="20% off"
-                link= {'/fireboult'}
+                link= {'/adidas'}
               />
               {/* <ItemsMob
                 imgURL="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/k/2/m/-original-imagxvyxc9su7u6y.jpeg?q=70"
