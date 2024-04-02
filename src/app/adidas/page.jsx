@@ -25,19 +25,19 @@ function page() {
         setShowPopup(!showPopup);
     };
 
-    useEffect(() => {
-        const handleClickOutside = (event) => {
-          if (popupRef.current && !popupRef.current.contains(event.target)) {
-            setShowPopup(false);
-          }
-        };
+    // useEffect(() => {
+    //     const handleClickOutside = (event) => {
+    //       if (popupRef.current && !popupRef.current.contains(event.target)) {
+    //         setShowPopup(false);
+    //       }
+    //     };
     
-        document.addEventListener('mousedown', handleClickOutside);
+    //     document.addEventListener('mousedown', handleClickOutside);
     
-        return () => {
-          document.removeEventListener('mousedown', handleClickOutside);
-        };
-      }, []);
+    //     return () => {
+    //       document.removeEventListener('mousedown', handleClickOutside);
+    //     };
+    //   }, []);
     
 
     return (
@@ -102,16 +102,17 @@ function page() {
                 <div className="m-2">
                     <img
                         src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/k/2/m/-original-imagxvyxc9su7u6y.jpeg?q=70"
-                        alt="" onClick={togglePopup}
+                        alt="" 
+                        // onClick={togglePopup}
                     />
 
-                    {
+                    {/* {
                         showPopup && (
                             <div ref={popupRef} className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-70 z-50">
                                 <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/k/2/m/-original-imagxvyxc9su7u6y.jpeg?q=7" alt=""  className="max-w-3/4 max-h-3/4" />
                             </div>
                         )
-                    }
+                    } */}
                 </div>
             </div>
 
