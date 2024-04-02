@@ -18,12 +18,12 @@ useState
 
 function page() {
     
-    const [showPopup, setShowPopup] = useState(false);
-    const popupRef = useRef(null);
+    // const [showPopup, setShowPopup] = useState(false);
+    // const popupRef = useRef(null);
 
-    const togglePopup = ()=>{
-        setShowPopup(!showPopup);
-    };
+    // const togglePopup = ()=>{
+    //     setShowPopup(!showPopup);
+    // };
 
     // useEffect(() => {
     //     const handleClickOutside = (event) => {
